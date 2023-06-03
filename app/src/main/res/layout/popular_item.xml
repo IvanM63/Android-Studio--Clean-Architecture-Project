@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/pop_image"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            app:riv_corner_radius="8dp"
+            android:scaleType="centerCrop"
+
+            android:src="@mipmap/kopi1"/>
+        <TextView
+            android:fontFamily="@font/nbold"
+            android:id="@+id/pop_judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:text="Arabica Coffe"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+
+        <LinearLayout
+            android:layout_marginHorizontal="9dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_star_24"/>
+            <TextView
+                android:fontFamily="@font/nmedium"
+                android:id="@+id/pop_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="4.8"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:fontFamily="@font/nmedium"
+                android:id="@+id/pop_ulasan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="1.3K ulasan"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:fontFamily="@font/nmedium"
+                android:id="@+id/pop_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:textColor="@color/black"
+                android:text="Rp 10000"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:fontFamily="@font/nbold"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="15dp"
+            android:textColor="@color/white"
+            android:text="Tambah Ke Keranjang"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="@color/coklat_soft"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

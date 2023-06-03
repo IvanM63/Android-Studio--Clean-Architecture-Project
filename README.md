@@ -1,1 +1,1 @@
-# AndroisStudio-PSI_Project Akhir
+# Android Studio: Clean Architecture Project
